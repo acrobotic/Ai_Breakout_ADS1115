@@ -261,9 +261,9 @@ RDY</text>
 <wire x1="-12.7" y1="-11.43" x2="-12.7" y2="-19.05" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-11.43" x2="12.7" y2="-19.05" width="0.254" layer="94"/>
 <text x="-11.43" y="-15.24" size="1.778" layer="94" font="vector">VDD:</text>
-<text x="-1.27" y="-15.24" size="1.778" layer="94" font="vector">–0.3~5.5V</text>
+<text x="-1.27" y="-15.24" size="1.778" layer="94" font="vector">-0.3~5.5V</text>
 <text x="-11.43" y="-17.78" size="1.778" layer="94" font="vector">Temp:</text>
-<text x="-2.54" y="-17.78" size="1.778" layer="94" font="vector">–50~125°C</text>
+<text x="-2.54" y="-17.78" size="1.778" layer="94" font="vector">-50~125°C</text>
 <text x="-11.43" y="11.43" size="1.27" layer="95" font="vector" ratio="10" rot="R180" align="center-right">VDD</text>
 <text x="11.43" y="-8.89" size="1.27" layer="95" font="vector" ratio="10" align="center-right">VSS</text>
 </symbol>
@@ -9713,7 +9713,7 @@ This library includes power ICs such as regulators, power symbols (e.g., GND, 5V
 <symbol name="VDD">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.905" y="2.54" size="1.524" layer="96" font="vector" ratio="10">VDD</text>
+<text x="-1.905" y="2.54" size="1.524" layer="95" font="vector" ratio="10">VDD</text>
 <pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
@@ -9756,8 +9756,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
 <smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-1.27" y="1.27" size="1.27" layer="51" font="vector" ratio="15">&gt;NAME</text>
-<text x="-1.27" y="1.27" size="1.27" layer="51" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
 <package name="1X05-ST">
 <wire x1="-9" y1="3.4" x2="-9" y2="-2.24" width="0.127" layer="21"/>
@@ -9798,6 +9797,22 @@ This library includes USB, pin headers and sockets in different configurations (
 <text x="-6.35" y="1.524" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <pad name="5" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 </package>
+<package name="1X05-NOFIRST">
+<wire x1="-6.35" y1="1.27" x2="6.35" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-1.27" x2="-6.35" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-6.35" y="1.524" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="5" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<wire x1="-6.35" y1="1.27" x2="6.35" y2="1.27" width="0.2032" layer="22"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.2032" layer="22"/>
+<wire x1="6.35" y1="-1.27" x2="-6.35" y2="-1.27" width="0.2032" layer="22"/>
+<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.27" width="0.2032" layer="22"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X02-SJ-NO">
@@ -9805,7 +9820,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="1.778" y="0.127" size="1.524" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="1.778" y="0.254" size="1.524" layer="95" font="vector" ratio="10">&gt;NAME</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
@@ -9873,6 +9888,18 @@ NC has a large amount of paste (see paste layer) so that it should jumper during
 </technologies>
 </device>
 <device name="NOSILK" package="1X05-NOSILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NOFIRST" package="1X05-NOFIRST">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -10206,19 +10233,19 @@ chip</description>
 <parts>
 <part name="U1" library="Ai_IC" deviceset="ADS1115" device="" value="ADS1115"/>
 <part name="FRAME1" library="Ai_Miscellany" deviceset="FRAME-LETTER" device="">
-<attribute name="AUTHOR" value="A.I. HERMOSAURUS"/>
+<attribute name="AUTHOR" value="A.I. Jeffrey Hermosura"/>
 <attribute name="REV" value="1.0"/>
 </part>
 <part name="GND1" library="Ai_Power" deviceset="GND" device=""/>
 <part name="VCC1" library="Ai_Power" deviceset="VDD" device=""/>
 <part name="R1" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
-<part name="R2" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
-<part name="R3" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
-<part name="VCC2" library="Ai_Power" deviceset="VDD" device=""/>
-<part name="JS1" library="Ai_Connectors" deviceset="1X02-SJ-NO" device=""/>
-<part name="C2" library="Ai_Passives" deviceset="CAP" device="0603" value="100nF"/>
 <part name="R4" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
-<part name="J2" library="Ai_Connectors" deviceset="1X05" device=""/>
+<part name="R2" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
+<part name="VCC2" library="Ai_Power" deviceset="VDD" device=""/>
+<part name="0X48" library="Ai_Connectors" deviceset="1X02-SJ-NO" device=""/>
+<part name="C2" library="Ai_Passives" deviceset="CAP" device="0603" value="100nF"/>
+<part name="R3" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
+<part name="J2" library="Ai_Connectors" deviceset="1X05" device="NOFIRST" value="1X05NOFIRST"/>
 <part name="J1" library="Ai_Connectors" deviceset="1X05" device=""/>
 <part name="C1" library="Ai_Passives" deviceset="CAP" device="0603" value="10uF"/>
 <part name="GND3" library="Ai_Power" deviceset="GND" device=""/>
@@ -10243,12 +10270,12 @@ chip</description>
 <instance part="GND1" gate="GND" x="179.07" y="78.74"/>
 <instance part="VCC1" gate="G$1" x="165.1" y="123.19"/>
 <instance part="R1" gate="G$1" x="193.04" y="111.76" rot="R90"/>
-<instance part="R2" gate="G$1" x="198.12" y="111.76" rot="R90"/>
-<instance part="R3" gate="G$1" x="182.88" y="111.76" rot="R90"/>
+<instance part="R4" gate="G$1" x="198.12" y="111.76" rot="R90"/>
+<instance part="R2" gate="G$1" x="182.88" y="111.76" rot="R90"/>
 <instance part="VCC2" gate="G$1" x="193.04" y="123.19"/>
-<instance part="JS1" gate="1" x="203.2" y="91.44" rot="R270"/>
+<instance part="0X48" gate="1" x="203.2" y="91.44" rot="R270"/>
 <instance part="C2" gate="G$1" x="111.76" y="109.22" rot="R180"/>
-<instance part="R4" gate="G$1" x="187.96" y="111.76" rot="R90"/>
+<instance part="R3" gate="G$1" x="187.96" y="111.76" rot="R90"/>
 <instance part="J2" gate="G$1" x="50.8" y="81.28"/>
 <instance part="J1" gate="G$1" x="50.8" y="101.6"/>
 <instance part="C1" gate="G$1" x="63.5" y="109.22"/>
@@ -10279,7 +10306,7 @@ chip</description>
 <pinref part="FB2" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="JS1" gate="1" pin="2"/>
+<pinref part="0X48" gate="1" pin="2"/>
 <pinref part="GND2" gate="GND" pin="GND"/>
 <wire x1="203.2" y1="81.28" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
 </segment>
@@ -10342,7 +10369,7 @@ chip</description>
 <pinref part="U1" gate="G$1" pin="ALERT/RDY"/>
 <wire x1="176.53" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="104.14" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
 <junction x="182.88" y="104.14"/>
 <label x="205.74" y="104.14" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
@@ -10360,8 +10387,8 @@ chip</description>
 <junction x="187.96" y="99.06"/>
 <wire x1="187.96" y1="99.06" x2="203.2" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="99.06" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="JS1" gate="1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="0X48" gate="1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="99.06" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="99.06" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
 <junction x="203.2" y="99.06"/>
@@ -10418,7 +10445,7 @@ chip</description>
 <pinref part="U1" gate="G$1" pin="SDA"/>
 <wire x1="176.53" y1="88.9" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="88.9" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -10429,7 +10456,7 @@ chip</description>
 </segment>
 <segment>
 <wire x1="146.05" y1="119.38" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="119.38" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
@@ -10444,7 +10471,7 @@ chip</description>
 <pinref part="FB1" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="116.84" x2="187.96" y2="123.19" width="0.1524" layer="91"/>
 <pinref part="VCC3" gate="G$1" pin="VDD"/>
 </segment>
@@ -10455,7 +10482,7 @@ chip</description>
 </segment>
 <segment>
 <pinref part="VCC6" gate="G$1" pin="VDD"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="123.19" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
