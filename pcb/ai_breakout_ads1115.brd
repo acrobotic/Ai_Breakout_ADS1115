@@ -164,7 +164,7 @@
 </layers>
 <board>
 <plain>
-<text x="7.747" y="10.668" size="0.8636" layer="26" font="vector" rot="MR0" align="center">16-Bit ADC
+<text x="7.747" y="10.668" size="0.8636" layer="26" font="vector" ratio="10" rot="MR0" align="center">16-Bit ADC
 4-Channel
 (ADS1115)</text>
 <wire x1="0" y1="12.7" x2="15.24" y2="12.7" width="0.0254" layer="20"/>
@@ -181,11 +181,11 @@
 <text x="12.319" y="2.794" size="0.6604" layer="25" font="vector" ratio="10" rot="SR90">AIN1</text>
 <text x="12.319" y="0.254" size="0.6604" layer="25" font="vector" ratio="10" rot="SR90">AIN0</text>
 <text x="12.319" y="10.414" size="0.6604" layer="25" font="vector" ratio="10" rot="SR90">ALRT</text>
-<text x="12.192" y="1.778" size="0.6096" layer="26" font="vector" rot="MR0" align="center-left">I2C Address:
+<text x="12.192" y="1.778" size="0.6096" layer="26" font="vector" ratio="10" rot="MR0" align="center-left">I2C Address:
 0x49 Default
 0x48 w Solder</text>
-<text x="7.62" y="5.207" size="0.508" layer="26" font="vector" rot="MR0" align="center">https://acrobotic.com</text>
-<text x="7.62" y="8.128" size="0.508" layer="26" font="vector" rot="MR0" align="center">v1.0</text>
+<text x="7.62" y="5.207" size="0.508" layer="26" font="vector" ratio="10" rot="MR0" align="center">https://acrobotic.com</text>
+<text x="3.302" y="10.922" size="0.508" layer="26" font="vector" ratio="10" rot="MR270" align="center">JCH v1.0</text>
 </plain>
 <libraries>
 <library name="Ai_Passives">
